@@ -45,6 +45,15 @@
 5. 点击"加载已解压的扩展程序"
 6. 选择项目目录
 
+## 打包流程
+1. 确保所有文件完整
+2. 在项目根目录运行：
+   ```bash
+   zip -r copy-tracker-extension.zip . -x ".*" -x "__MACOSX"
+   ```
+3. 生成copy-tracker-extension.zip文件
+4. 准备发布到Chrome Web Store
+
 ## 未来计划
 - 添加搜索功能
 - 支持导出记录
