@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+  <img src="icons/icon.svg" alt="icon" class="header-icon">
+  <h1>Copy History</h1>
+</div>
+    <ul id="history-list">
+      <template id="copy-item-template">
+        <li class="copy-item">
+          <div class="copy-content"></div>
+          <div class="copy-meta">
+            <a href="#" class="copy-url" target="_blank"></a>
+            <span class="copy-time"></span>
+          </div>
+          <button class="delete-btn" title="Delete record">delete</button>
+        </li>
+      </template>
+      <div id="empty-state" class="empty-state">No records yet. Copy something to get started!</div>
+    </ul>
+  <div class="footer">
+    <button id="clear-all-btn">Clear All</button>
+  </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
